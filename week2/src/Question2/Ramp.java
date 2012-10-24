@@ -22,7 +22,6 @@ public class Ramp {
 			}
 			System.out.println();
 		}
-
 	}
 
 }
