@@ -17,6 +17,7 @@ public class Euclid {
 		System.out.println("y = " + y);
 		
 		int difference = 0;
+		int gcd = 0;
 		
 		do {
 			if (x > y){
@@ -28,8 +29,13 @@ public class Euclid {
 			}
 		} while (difference > 0);
 		
-		System.out.println("x = " + x);
-		System.out.println("y = " + y);
+		if (x > 0) {
+			gcd = x;
+		} else {
+			gcd = y;
+		}
+		
+		System.out.println("Greatest Common Denominator = " + gcd);
 		
 		in.close();
 	}
