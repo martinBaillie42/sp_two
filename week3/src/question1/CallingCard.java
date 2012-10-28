@@ -5,12 +5,14 @@ public class CallingCard extends Card {
 	private int pin;
 	
 	public CallingCard(String n, String number, int p) {
-		
+		super(n);
+		cardNumber = number;
+		pin = p;
 	}
 	
 	@Override
 	public String format() {
-		return "dummy value";
+		return super.format() + ", Card number: " + cardNumber + ", Pin: " + pin;
 	}
 	
 	public String getCardNumber() {
