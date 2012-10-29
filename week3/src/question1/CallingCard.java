@@ -18,4 +18,20 @@ public class CallingCard extends Card {
 	public String getCardNumber() {
 		return cardNumber;
 	}
+	
+	@Override
+	public String toString() {
+		return "CallingCard[name=" + getName() + "]{number=" + cardNumber + ".pin=" + pin + "]";
+	}
+	
+	@Override
+	public boolean equals(Object otherObject) {
+		if (getClass() == otherObject.getClass()) {
+			CallingCard other = (CallingCard) otherObject;
+			return getName().equals(other.getName())
+					&& cardNumber.equals(other.cardNumber) 
+					&& pin == other.pin;
+		}
+		return false;
+	}
 }

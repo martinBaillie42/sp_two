@@ -14,10 +14,14 @@ public class HolderTester {
 		b.addCard(d);
 		b.addCard(c);
 		
+		//System.out.println(b.formatCards());
+		//System.out.println("Expected: \n[Name: John Doe, ID: 08-097654, "
+		//		+ "Expiration year: 2007 |"
+		//		+ " Name: Omega Card, Card Number: 301233985945, Pin: 1030]");
+		
 		System.out.println(b.formatCards());
-		System.out.println("Expected: \n[Name: John Doe, ID: 08-097654, "
-				+ "Expiration year: 2007 |"
-				+ " Name: Omega Card, Card Number: 301233985945, Pin: 1030]");
+		System.out.println("Number of expired cards: " + b.getExpiredCardCount());
+		System.out.println("Expected: 1");
 	}
 
 }

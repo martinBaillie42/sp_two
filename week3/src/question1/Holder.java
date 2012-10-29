@@ -15,4 +15,15 @@ public class Holder {
 	public String formatCards() {
 		return "[" + card1.format() + " | " + card2.format() + "]";
 	}
+	
+	public int getExpiredCardCount() {
+		int count = 0;
+		if (card1.isExpired()) {
+			count++;
+		}
+		if (card2.isExpired()) {
+			count++;
+		}
+		return count;
+	}
 }
